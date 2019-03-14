@@ -1,26 +1,21 @@
-# Adafruit Unified BNO055 Driver (AHRS/Orientation)  [![Build Status](https://travis-ci.com/adafruit/Adafruit_BNO055.svg?branch=master)](https://travis-ci.com/adafruit/Adafruit_BNO055)
+# Adafruit Conway Game of Life Kit
 
-This driver is for the Adafruit BNO055 Breakout (http://www.adafruit.com/products/2472),
-and is based on Adafruit's Unified Sensor Library (Adafruit_Sensor).
+<a href="http://www.adafruit.com/products/89"><img src="assets/board.jpg?raw=true" width="500px"></a>
 
-To work with the Arduino Zero, the BNO055's ADR pin must be high, and an "#error" must be removed from the .h file.
+In 1970, John Conway came up with a 1-player game called [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). The [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is a mathematical game that simulates 'colonies' that grow or die based on how crowded or lonely they are and is known for the way it creates a beautiful organic display out of randomness.
 
-## What is the Adafruit Unified Sensor Library? ##
+Here is a design for a simple electronic project that plays Conway's Game of Life. Make one kit and keep it on your desk, or attach multiple kit modules together to create a large display.
 
-The Adafruit Unified Sensor Library ([Adafruit_Sensor](https://github.com/adafruit/Adafruit_Sensor)) provides a common interface and data type for any supported sensor.  It defines some basic information about the sensor (sensor limits, etc.), and returns standard SI units of a specific type and scale for each supported sensor type.
+Originally created by Dropout Design, this revision adds a few extra features. The kit is very easy to make and an excellent first electronics/soldering project. It is perfect for workshops since at the end everyone can [connect their completed module](https://learn.adafruit.com/game-of-life/) together.
 
-It provides a simple abstraction layer between your application and the actual sensor HW, allowing you to drop in any comparable sensor with only one or two lines of code to change in your project (essentially the constructor since the functions to read sensor data and get information about the sensor are defined in the base Adafruit_Sensor class).
+### Features:
 
-This is imporant useful for two reasons:
+- Each kit displays a 4x4 grid (16 LEDs)
+- Connect as many kits as youd like, in any configuration, to create a larger game board
+- Runs off of 2 AA batteries (not included), but can be easily modified to run off of USB or wall-wart power
+- On/Off button to save power, also for resetting the display
+- Automatically resets if the colony has died or stagnated (regeneration)
+- Backwards compatible with older versions
 
-1.) You can use the data right away because it's already converted to SI units that you understand and can compare, rather than meaningless values like 0..1023.
+[There's tons more to read about the project, including directions at the website!](https://learn.adafruit.com/game-of-life/)
 
-2.) Because SI units are standardised in the sensor library, you can also do quick sanity checks when working with new sensors, or drop in any comparable sensor if you need better sensitivity or if a lower cost unit becomes available, etc. 
-
-Light sensors will always report units in lux, gyroscopes will always report units in rad/s, etc. ... freeing you up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean.
-
-## About this Driver ##
-
-Adafruit invests time and resources providing this open source code.  Please support Adafruit and open-source hardware by purchasing products from Adafruit!
-
-Written by Kevin (KTOWN) Townsend for Adafruit Industries.
