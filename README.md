@@ -1,6 +1,8 @@
 # Adafruit Conway Game of Life Kit
 
-<a href="http://www.adafruit.com/products/89"><img src="assets/board.jpg?raw=true" width="500px"></a>
+<a href="http://www.adafruit.com/products/89"><img src="assets/board.jpg?raw=true" width="500px"><br/>
+Click here to purchase one from the Adafruit shop
+</a>
 
 In 1970, John Conway came up with a 1-player game called [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). The [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) is a mathematical game that simulates 'colonies' that grow or die based on how crowded or lonely they are and is known for the way it creates a beautiful organic display out of randomness.
 
